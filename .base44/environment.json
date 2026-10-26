@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "STRIPE_SECRET_KEY",
+      "description": "Stripe secret key (test mode: sk_test_...) used by POST /api/checkout to create subscription Checkout Sessions. Dashboard: https://dashboard.stripe.com/test/apikeys",
+      "requiredAtBoot": false
+    }
+  ]
+}
